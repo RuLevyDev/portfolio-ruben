@@ -187,7 +187,13 @@ const copy = {
 // ——— UI Primitives ———————————————————————————————————————————————————
 function Badge({ text }: { text: string }) {
   return (
-    <span className="inline-flex items-center rounded-full border border-white/20 bg-white/40 px-3 py-1 text-sm font-medium backdrop-blur dark:bg-white/5">
+    <span
+      className="inline-flex items-center rounded-full
+                 border px-3 py-1 text-sm font-medium
+                 border-gray-200 bg-gray-100 text-gray-800
+                 hover:bg-gray-200
+                 dark:border-white/10 dark:bg-white/10 dark:text-gray-100 dark:hover:bg-white/15"
+    >
       {text}
     </span>
   );
@@ -249,13 +255,23 @@ export default function Portfolio() {
               {t.nav.contact}
             </a>
             <button
-              onClick={() => setLang((l) => (l === "es" ? "en" : "es"))}
-              className="rounded-full border border-white/20 bg-white/60 px-3 py-1 text-xs font-semibold backdrop-blur hover:bg-white/80 dark:bg-white/10 dark:hover:bg-white/20"
-              aria-label="Change language"
-              title="Change language"
-            >
-              {lang === "es" ? "EN" : "ES"}
-            </button>
+            onClick={() => setLang((l) => (l === "es" ? "en" : "es"))}
+            className="flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-3 py-1 text-xs font-semibold backdrop-blur hover:bg-white dark:border-white/10 dark:bg-white/10 dark:hover:bg-white/20"
+            aria-label={lang === "es" ? "Cambiar a inglés" : "Switch to Spanish"}
+            title={lang === "es" ? "Cambiar a inglés" : "Switch to Spanish"}
+          >
+            <img
+              src={lang === "es" ? "/uk.png" : "/sp.png"}
+              alt={lang === "es" ? "English" : "Español"}
+              className="h-4 w-4 rounded-full ring-1 ring-black/10 dark:ring-white/10"
+              loading="eager"
+              decoding="async"
+            />
+          <span>{lang === "es" ? "EN" : "ES"}</span>
+        </button>
+
+
+
           </nav>
         </div>
       </header>
