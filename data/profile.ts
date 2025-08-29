@@ -55,7 +55,7 @@ export const profile = {
       title: "Backgroud Task Optimizer - pub.dev",
       image: "/dart.png",
       period: "2023–Presente",
-       description: {
+      description: {
         es: "Paquete oficial en Dart/Flutter, usado en más de 400 proyectos. Diseñado para ejecutar operaciones costosas en segundo plano mediante isolates, evitando bloquear la UI. Ofrece soporte para profiling de rendimiento, gestión de timeouts y lógica de reintentos con backoff exponencial. Ideal para operaciones intensivas como procesamiento de datos, peticiones HTTP o conversión de medios.",
         en: "Official Dart/Flutter package used in 400+ projects. Designed to run heavy operations in the background using isolates, keeping the UI responsive. Includes built-in performance profiling, timeout handling, and retry logic with exponential backoff. Perfect for intensive tasks like data processing, HTTP requests, or media conversion.",
       },
@@ -63,16 +63,27 @@ export const profile = {
       link: "https://pub.dev/packages/background_task_optimizer",
     },
     {
+      title: "BlocTestMate - pub.dev",
+      image: "/dart.png",
+      period: "2025–Presente",
+      description: {
+        es: "Paquete Dart para pruebas orientadas a escenarios en BLoC. Basado en bloc y bloc_test, permite definir escenarios con una DSL concisa, registrar dependencias y comparar secuencias de estados con golden files.",
+        en: "Dart package for scenario‑oriented BLoC testing. Built on top of bloc and bloc_test, lets you define scenarios with a concise DSL, register dependencies, and compare state sequences via golden files.",
+      },
+      highlights: ["Dart", "Flutter", "Testing", "BLoC", "OSS"],
+      link: "https://pub.dev/packages/bloc_testmate",
+    },
+    {
       title: "Baby Mam",
       image: "/baby-mam.png",
       period: "2023",
-       description: {
-       es: "App móvil para embarazadas que combina seguros de maternidad con herramientas de acompañamiento. Incluye contador regresivo al parto, seguimiento del crecimiento del bebé, artículos, consejos, videos formativos y foros para futuras mamás.con énfasis en accesibilidad, rendimiento y buenas prácticas.",
-       en: "Mobile app for pregnant women combining maternity insurance with support tools. Features countdown to due date, baby growth tracker, articles, tips, video training and community forums. With focus on accessibility, performance, and best practices.",
+      description: {
+        es: "App móvil para embarazadas que combina seguros de maternidad con herramientas de acompañamiento. Incluye contador regresivo al parto, seguimiento del crecimiento del bebé, artículos, consejos, videos formativos y foros para futuras mamás.con énfasis en accesibilidad, rendimiento y buenas prácticas.",
+        en: "Mobile app for pregnant women combining maternity insurance with support tools. Features countdown to due date, baby growth tracker, articles, tips, video training and community forums. With focus on accessibility, performance, and best practices.",
       },
-      highlights: ["Flutter", "BLoC", "Firebase", "CI/CD", "A11y","Clean Architecture"],
+      highlights: ["Flutter", "BLoC", "Firebase", "CI/CD", "A11y", "Clean Architecture"],
       link: "https://www.babymam.com/",
-    },{
+    }, {
       title: "Koru: Your Acne Coach App",
       image: "/koru.png",
       period: "2024",
@@ -80,7 +91,7 @@ export const profile = {
         es: "App móvil para el cuidado de la piel con enfoque en el acné. Incluye escáner facial con IA, contenidos de dermatólogos y psicólogos, seguimiento del progreso con selfies, registro de hábitos y emociones, retos personalizados y recordatorios. Enfoque en accesibilidad, rendimiento y Clean Architecture.",
         en: "Mobile app for skincare with a focus on acne. Features AI facial scanner, dermatologist and mental health expert content, progress tracking with selfies, habit and mood logging, personalized challenges and reminders. Focused on accessibility, performance and Clean Architecture.",
       },
-      highlights: ["Flutter", "BLoC", "Firebase","TensorFlow", "CI/CD", "AI", "A11y","Clean Architecture","MVVM"],
+      highlights: ["Flutter", "BLoC", "Firebase", "TensorFlow", "CI/CD", "AI", "A11y", "Clean Architecture", "MVVM"],
       link: "https://www.koruacne.com/",
     },
     {

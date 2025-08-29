@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React, { useMemo, useState } from "react";
@@ -171,21 +172,21 @@ export default function Portfolio() {
           {profile.projects.map((p) => (
             
            <Card key={p.title}>
- <div className="flex items-start justify-between">
-  <div className="flex items-center gap-3">
-    {p.image && (
-      <div className="relative h-13 w-13 shrink-0 overflow-hidden rounded-xl ring-1 ring-black/10 dark:ring-blue/10 bg-blue">
-        <img
-          src={p.image}
-          alt={`${p.title} logo`}
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-      </div>
-    )}
-    <h3 className="text-lg font-semibold leading-tight">{p.title}</h3>
-  </div>
-  <span className="text-sm text-gray-500 dark:text-gray-400">{p.period}</span>
-</div>
+          <div className="flex items-start justify-between">
+            <div className="flex items-center gap-3">
+              {p.image && (
+                <div className="relative h-13 w-13 shrink-0 overflow-hidden rounded-xl ring-1 ring-black/10 dark:ring-blue/10 bg-blue">
+                  <img
+                    src={p.image}
+                    alt={`${p.title} logo`}
+                    className="absolute inset-0 h-full w-full object-cover"
+                  />
+                </div>
+              )}
+              <h3 className="text-lg font-semibold leading-tight">{p.title}</h3>
+            </div>
+            <span className="text-sm text-gray-500 dark:text-gray-400">{p.period}</span>
+          </div>
 
   <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">{p.description[lang]}</p>
   <div className="mt-3 flex flex-wrap gap-2">
